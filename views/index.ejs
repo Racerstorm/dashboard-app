@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="container">   
+      <fieldset>
+        <form action="/addsteps" method="post">
+          <input name="action" type="text" class="ghost-input" placeholder="Enter the Action" required>
+          <input name="target" type="text" class="ghost-input" placeholder="Enter the Target"  required>
+          <input name="value" type="text" class="ghost-input" placeholder="Enter the Value"  required>
+          <input type="submit" class="ghost-button" value="Submit">
+        </form>
+      </fieldset>
+      <fieldset>
+        <form action="/deletestep" method="post">
+            <h2>Delete Step</h2>
+          <input name="stepNo" type="text" class="ghost-input" placeholder="Enter the Step Number" required>
+          <input type="submit" class="ghost-button" value="Delete Step">
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>
